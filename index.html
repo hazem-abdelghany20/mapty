@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+    <title>mapty // Map your workouts</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img class="logo" src="logo.png" />
+      <!-- logging workouts tab-->
+          <ul class="workouts">
+            <form class="form hidden">
+              <div class="form__row">
+                <label class="form__label">Type</label>
+                <select class="form__input form__input--type">
+                  <option value="running">Running</option>
+                  <option value="cycling">Cycling</option>
+                </select>
+              </div>
+              <div class="form__row">
+                <label class="form__label">Distance</label>
+                <input class="form__input form__input--distance" placeholder="km" />
+              </div>
+              <div class="form__row">
+                <label class="form__label">Duration</label>
+                <input
+                  class="form__input form__input--duration"
+                  placeholder="min"
+                />
+              </div>
+              <div class="form__row cad">
+                <label class="form__label">Cadence</label>
+                <input
+                  class="form__input form__input--cadence"
+                  placeholder="step/min"
+                />
+              </div>
+              <div class="form__row elev form__row--hidden">
+                <label class="form__label">Elev Gain</label>
+                <input
+                  class="form__input form__input--elevation"
+                  placeholder="meters"
+                />
+              </div>
+              <button class="form__btn">OK</button>
+            </form>
+    <!-- Running workout tab -->
+           
+    <!-- cycling workout tab -->
+            
+          </ul>
+          <p class="copyright">no copyright :)</p>
+      </div>
+      
+    </div>
+    <div id="map" class="map"></div>
+  </body>
+</html>
